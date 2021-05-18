@@ -12,6 +12,9 @@ h1{
     text-align: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+h2{
+    color:white;
+}
 body{
     background-color: rgb(22, 22, 22);
 }
@@ -24,6 +27,9 @@ img{
         height: 320px;
     }
 }
+#info{
+    width: 20em;
+}
 @media (max-width:414px){
     .container-fluid{
         position: relative;
@@ -35,9 +41,11 @@ img{
         width: 300px;
         height: 300px;  
     }
-    #link{
-        width:180px;
-        height: 180px;
+    #info{
+        width: 17em;
+    }
+    #git{
+        margin-top: 20px;
     }
     img{
         width: 200px;
