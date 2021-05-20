@@ -42,7 +42,7 @@ img{
         height: 300px;  
     }
     #info{
-        width: 17em;
+        width: 100%;
     }
     #git{
         margin-top: 20px;
