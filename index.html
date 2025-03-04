@@ -3,44 +3,217 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
         <title>Nick Boisclair</title>
         <link rel="shortcut icon" type="image/jpg" href="Untitled design.png"/>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">        <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+        <script defer src="script.js"></script>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
-        <div class="container-fluid justify-content-center align-items-center" id="logo" style="margin-bottom: -30px;">
-        <img id="main" src="Nick Boisclair.png"width="400" height="400">
-    </div>
-        <center>
-        <div class="container-fluid">
+    <body class="roboto-font">      
+        <div id="particles-js"></div>
+        <div class="flex flex-row justify-center h-screen items-center bg-[#282828]" id="test">
+            <div class="flex flex-col justify-center items-center content">
+                <img src="pfp.jpg" alt="Nick Boisclair" class="rounded-circle" style="width: 300px; height: 300px; border-color: white; border-width: 10px; border: solid;">
+                <br></br>
+                    <p class="text-white">Hello, I'm</p>
+                    <p class="main-text relative group"> Nicholas Boisclair
+                        <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-[#9cb08d] transition-all duration-300 group-hover:w-full"></span>
+                    </p>   
+            </div>
+        </div>
+        <div class="content">
+        <div class="about-me text-center" id="about">
+        <div class="flex flex-row justify-center">
+            <p class="header">About Me</p>
+        </div>
+            <div class="flex flex-row justify-evenly items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9cb08d" class="w-18 h-18">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                  </svg>             
+                  <p class="max-w-[500px] text-left">After growing up always fascinated by computers hardware and software, I decided to take a computer science course in high school which proved my passion for developing software. This led me to completing my Bachelors of Science in Software Engineering at the University of Windsor</p>                
+            </div>
+            <br></br>
+            <div class="flex flex-row justify-evenly items-center">    
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9cb08d" class="w-18 h-18">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
+                  </svg>        
+                <p class="max-w-[500px] text-left">I enjoy developing applications to the problems I encounter in my daily life. I am experienced in front-end web development but am always trying to expand my portfolio and learn new technologies!</p>
+                
+            </div>
+        </div>
+        <div class="experience">
+            <div class="flex flex-row justify-center">
+                <p class="header">Experience</p>
+            </div>
+                <div class="flex flex-col justify-center items-center sm:flex-row ">
+                    <div class="flex flex-col card sm:h-[255px] lg:h-[200px]">
+                        <p class="company text-[1.5rem]">Borderconnect</p>
+                        <p class="job-title">eManifest Support Specialist</p>
+                        <p class="date">August 2024 - Present</p>
+                        <hr>
+                        <ul class="description">
+                            <li>Provided expert customer support for resolving manifest and bond issues, ensuring accurate and timely documentation to streamline cross-border shipping operations</li>
+                            <li>Guided customers through proprietary software functionality, delivering personalised training and troubleshooting to enhance user experience and satisfaction</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col card sm:h-[255px] lg:h-[200px]">
+                        <p class="company text-[1.5rem]">Toronto Dominion Bank</p>
+                        <p class="job-title">Front-End Developer II</p>
+                        <p class="date">January 2023 - April 2023</p>
+                        <hr>
+                        <ul class="description">
+                            <li>Implemented selection methods for accessing valid customer profiles from the database</li>
+                            <li>Utilised Angular and Typescript to correct bugs, and optimize the user experience</li>
+                            <li>Collaborated with team members using JIRA and Confluence to organise tickets and version control</li>
+                        </ul>
+                    </div>
+                    
+                    
+                    
+                </div>
+                <div class="flex flex-col justify-center items-center sm:flex-row">
+                    <div class="flex flex-col card sm:h-[255px] lg:h-[200px]">
+                        <p class="company text-[1.5rem]">Toronto Dominion Bank</p>
+                        <p class="job-title">Front-End Developer I</p>
+                        <p class="date">May 2022 - August 2022</p>
+                        <hr>
+                        <ul class="description">
+                            <li>Integrated a live chat widget onto the various front-end platforms to provide customers with a 24/7 support option</li>
+                            <li>The team utilised the principles of the agile methodology to ensure timelines were met</li>
+                            <li>Participated in code reviews, and bug fixes which stengthened my skills in the GIT CLI</li
+                        </ul>
+                    </div>
+                    <div class="flex flex-col card sm:h-[255px] lg:h-[200px]">
+                        <p class="company text-[1.5rem]">University of Windsor</p>
+                        <p class="job-title">Teaching Assistant</p>
+                        <p class="date">January 2021 - April 2024</p>
+                        <hr>
+                        <ul class="description">
+                            <li>In charge of facilitating labs, and office hours to ensure students had an outlet to get clarification on their concerns</li>
+                            <li>Resposible for grading the assignments, and exams of students in a timely manner as well as providing clear and concise feedback</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="projects">
+                <div class="flex flex-row justify-center">
+                    <p class="header">Projects</p>
+                </div>
+                <div class="flex flex-col justify-center items-center sm:flex-row">
+                    <div class="flex flex-col card sm:h-[300px] lg:h-[250px]">
+                        <div class="flex flex-row justify-between">
+                            <p class="company text-lg sm:text-2xl">MP4 Video Player</p>
+                            <p class="language text-lg sm:text-2xl">C</p>
+                        </div>
+                        <hr>
+                        <p class="jon-title flex-grow">A simple MP4 video player developed in C, integrating the ffmpeg liubrary for the encoding and decoding of MP4 packets. Uses the GTK library to achieve a clean UI. Provides the ability to capture a png image of the current frame.</p>
+                        <div class="flex flex-row justify-center items-center">
+                            <div class="flex flex-row github-button items-center">
+                            <img src="github-mark-white.svg" alt="GitHub Logo" width="25" class="mr-2">
+                            <a href="https://github.com/nboisclair64/4800-Video-Player" target="_blank">Github</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="flex flex-col card sm:h-[300px] lg:h-[250px]">
+                        <div class="flex flex-row justify-between">
+                            <p class="company text-lg sm:text-2xl">Fantasy Stat Tracker</p>
+                            <p class="language text-lg sm:text-2xl">Swift</p>
+                        </div>
+                        <hr>
+                        <p class="jon-title flex-grow">A Statistic tracker for NHL players that allows the user to favourite players and obtain live points, goals, assists and more using the NHL REST API. Uses Google Firebase for authentication and Google Firestore for the database.</p>
+                        <div class="flex flex-row justify-center items-center">
+                            <div class="flex flex-row github-button items-center">
+                            <img src="github-mark-white.svg" alt="GitHub Logo" width="25" class="mr-2">
+                            <a href="https://github.com/nboisclair64/FantasyStatTracker" target="_blank">Github</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center sm:flex-row">
+                    <div class="flex flex-col card sm:h-[300px] lg:h-[250px]">
+                        <div class="flex flex-row justify-between">
+                            <p class="company text-lg sm:text-2xl">Accesible Assistant</p>
+                            <div class="flex flex-row">
+                                <p class="language text-lg sm:text-2xl mr-2">React</p>
+                                <p class="language text-lg sm:text-2xl">Python</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="jon-title flex-grow">A web application that expands the featureset of ChatGPT by providing users with Dyslexia font-altering options for ChatGPT's responses. Provides these users with visual changes as well as audio playback.</p>
+                        <div class="flex flex-row justify-center items-center">
+                            <div class="flex flex-row github-button items-center">
+                            <img src="github-mark-white.svg" alt="GitHub Logo" width="25" class="mr-2">
+                            <a href="https://github.com/nboisclair64/accessible-assistant-499" target="_blank">Github</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="flex flex-col card sm:h-[300px] lg:h-[250px]">
+                        <div class="flex flex-row justify-between">
+                            <p class="company text-lg sm:text-2xl">DrinkUp!</p>
+                            <div class="flex flex-row">
+                                <p class="language text-lg sm:text-2xl mr-2">React</p>
+                                <p class="language text-lg sm:text-2xl">Python</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="jon-title flex-grow">A web application that encourages users to stay hydrated by rewarding a users with points based on the water they drink. These points allow the user to collect badges and compete against friends on the leaderboard. This was our teams submission to Winhacks 2025.</p>
+                        <div class="flex flex-row justify-center items-center">
+                            <div class="flex flex-row github-button items-center">
+                            <img src="github-mark-white.svg" alt="GitHub Logo" width="25" class="mr-2">
+                            <a href="https://github.com/samaksh-arora/winhacks2025" target="_blank">Github</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                </div>
+        </div>
+        <div class="contact">
+            <div class="flex flex-row justify-center ">
+                <p class="header">Contact Me</p>
+                
+            </div>
+            <div class="flex flex-row justify-around content ml-10 mr-10 ">
+                <a href="https://github.com/nboisclair64" target="_blank">
+                <div class="flex flex-col justify-center items-center linkedin">
+                    
+                    <svg width="98" height="96" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" fill="#fff"/></svg>
+                    <p class="text-xl mt-3">Github</p>
+                </div></a>
+                <a href="https://linkedin.com/in/nickboisclair/" target="_blank">
+                <div class="flex flex-col justify-center items-center linkedin">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                        <path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 14 11.011719 C 12.904779 11.011719 11.919219 11.339079 11.189453 11.953125 C 10.459687 12.567171 10.011719 13.484511 10.011719 14.466797 C 10.011719 16.333977 11.631285 17.789609 13.691406 17.933594 A 0.98809878 0.98809878 0 0 0 13.695312 17.935547 A 0.98809878 0.98809878 0 0 0 14 17.988281 C 16.27301 17.988281 17.988281 16.396083 17.988281 14.466797 A 0.98809878 0.98809878 0 0 0 17.986328 14.414062 C 17.884577 12.513831 16.190443 11.011719 14 11.011719 z M 14 12.988281 C 15.392231 12.988281 15.94197 13.610038 16.001953 14.492188 C 15.989803 15.348434 15.460091 16.011719 14 16.011719 C 12.614594 16.011719 11.988281 15.302225 11.988281 14.466797 C 11.988281 14.049083 12.140703 13.734298 12.460938 13.464844 C 12.78117 13.19539 13.295221 12.988281 14 12.988281 z M 11 19 A 1.0001 1.0001 0 0 0 10 20 L 10 39 A 1.0001 1.0001 0 0 0 11 40 L 17 40 A 1.0001 1.0001 0 0 0 18 39 L 18 33.134766 L 18 20 A 1.0001 1.0001 0 0 0 17 19 L 11 19 z M 20 19 A 1.0001 1.0001 0 0 0 19 20 L 19 39 A 1.0001 1.0001 0 0 0 20 40 L 26 40 A 1.0001 1.0001 0 0 0 27 39 L 27 29 C 27 28.170333 27.226394 27.345035 27.625 26.804688 C 28.023606 26.264339 28.526466 25.940057 29.482422 25.957031 C 30.468166 25.973981 30.989999 26.311669 31.384766 26.841797 C 31.779532 27.371924 32 28.166667 32 29 L 32 39 A 1.0001 1.0001 0 0 0 33 40 L 39 40 A 1.0001 1.0001 0 0 0 40 39 L 40 28.261719 C 40 25.300181 39.122788 22.95433 37.619141 21.367188 C 36.115493 19.780044 34.024172 19 31.8125 19 C 29.710483 19 28.110853 19.704889 27 20.423828 L 27 20 A 1.0001 1.0001 0 0 0 26 19 L 20 19 z M 12 21 L 16 21 L 16 33.134766 L 16 38 L 12 38 L 12 21 z M 21 21 L 25 21 L 25 22.560547 A 1.0001 1.0001 0 0 0 26.798828 23.162109 C 26.798828 23.162109 28.369194 21 31.8125 21 C 33.565828 21 35.069366 21.582581 36.167969 22.742188 C 37.266572 23.901794 38 25.688257 38 28.261719 L 38 38 L 34 38 L 34 29 C 34 27.833333 33.720468 26.627107 32.990234 25.646484 C 32.260001 24.665862 31.031834 23.983076 29.517578 23.957031 C 27.995534 23.930001 26.747519 24.626988 26.015625 25.619141 C 25.283731 26.611293 25 27.829667 25 29 L 25 38 L 21 38 L 21 21 z" fill="#fff"></path>
+                        </svg>
+                    <p class="text-xl mt-3">Linkedin</p>
+                </div></a>
+                <a href="mailto:boiscla@uwindsor.ca">
+                <div class="flex flex-col justify-center items-center icon">
+                    <svg width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <rect x="3" y="5" width="18" height="14" rx="2" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    <p class="text-xl mt-3">E-Mail</p>
+                </div></a>
+               
+            </div>
+        </div>
+        <div class="flex flex-row justify-center p-3 bg-[#282828]">
+            <p>Copyright © 2024 - Nicholas Boisclair</p>
+        </div>
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>
             
-        <div class="row justify-content-center">
-            <div class="col-md-4">
-                <a href="https://github.com/nboisclair64" target="_blank"><img id="git"src="github-11-xxl.png" width="200" height="200"></a>
-            </div>
-            <div class="col-md-4">
-                <a href="about.html"><img src="About me.png" width="200" height="200"style="margin-left:10px;"></a>
-            </div>
-            <div class="col-md-4">
-                <a href="https://www.linkedin.com/in/nick-boisclair-a0852b19b/" target="_blank"><img id="link" src="linkedin-3-xxl.png" width="200" height="200"></a>
-            </div>
-            
-            <div class="col-md-4">
-                <a href="projects.html"><img src="Projects.png" width="270" height="270"></a>
-            </div>
-            <div class="col-md-4">
-                <a href="mailto:boiscla@uwindsor.ca" target="_blank"><img src="Coffee Please (2).png" width="270" height="270"></a>
-            </div>
-
-            
-
-    </div>
-</div>
-        </center>
-        <script src="" async defer></script>
     </body>
 </html>
